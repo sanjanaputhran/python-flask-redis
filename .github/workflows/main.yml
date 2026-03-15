@@ -18,6 +18,7 @@ jobs:
         image-ref: 'demo-app'
         format: 'sarif'
         output: 'trivy-results.sarif'
+        scanners: vuln,misconfig
 
     - name: Download Custom Trivy HTML Template
       run: |
